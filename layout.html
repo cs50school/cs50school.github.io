@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap Link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Styling Sheet Links -->
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!-- Font Imports -->
+        <link href="https://fonts.googleapis.com/css?family=Kite+One|Quicksand|Rozha+One" rel="stylesheet">
+
+        <!-- Icons Import -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <!-- Title -->
+        <title>Samuel Adams Elementary</title>
+    </head>
+
+    <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm bg-light fixed-top">
+        <!-- Nav Title / Icon -->
+        <!--NOTE: having issues w image display -->
+        <a class="navbar-brand" href="/" id="schoolname">Samuel Adams Elementary</a>
+        <!-- Nav Links -->
+        <ul class="navbar-nav nav-pills ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/students">Students</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link active" href="/parents">Parents</a>
+            <li class="nav-item">
+                <a class="nav-link active" href="/contact">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+        <!-- Page Body, Plugged in with Jinja -->
+
+        <main class="container p-5">
+            {% block main %}{% endblock %}
+        </main>
+
+        <!-- Sticky Footer Info -->
+
+        <footer id="footer">
+            <p>Samuel Adams Elementary School | 165 Webster Street, East Boston, MA 02128 | Phone: 617-635-8383 </p>
+        </footer>
+
+    </body>
+
+</html>
